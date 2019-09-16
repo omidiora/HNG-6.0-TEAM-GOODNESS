@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="image-section">
+        <img src="images/Laptop.jpg" alt="" />
+      </div>
+      <div class="wrapper">
+        <form action="" name="myform" method="POST">
+          <div class="form">
+            <label><b>Username or Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Username"
+              name="username"
+             
+            />
+
+            <label><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+             
+            />
+
+            <br />
+            <button type="submit" onclick="myfunction()">Log In</button>
+            <br />
+            <br />
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+            <br />
+            <br />
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
