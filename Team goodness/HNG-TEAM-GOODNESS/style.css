@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #92a9c9;
+}
+#container {
+  display: flex;
+}
+.image-section {
+  width: 40%;
+  height: 650px;
+  margin: 0.5em;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper {
+  height: 600px;
+  margin: 2em 0 2em 0;
+  width: 60%;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+form {
+  background-color: white;
+  margin: 3.5em auto;
+  width: 30em;
+  height: 30em;
+}
+.form {
+  padding: 5em;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 25px 10px;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #e7e7e7;
+}
+label {
+  margin: 25px 10px 0 10px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #5f3bcf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  float: right;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
