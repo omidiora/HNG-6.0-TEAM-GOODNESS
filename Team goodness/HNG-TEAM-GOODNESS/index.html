@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div id="container">
@@ -13,14 +14,14 @@
         <img src="images/Laptop.jpg" alt="" />
       </div>
       <div class="wrapper">
-        <form action="/action_page.php">
+        <form action="" name="myform" method="POST">
           <div class="form">
             <label><b>Username or Email</b></label>
             <input
               type="text"
               placeholder="Enter Username"
               name="username"
-              required
+             
             />
 
             <label><b>Password</b></label>
@@ -28,11 +29,11 @@
               type="password"
               placeholder="Enter Password"
               name="password"
-              required
+             
             />
 
             <br />
-            <button type="submit">Log In</button>
+            <button type="submit" onclick="myfunction()">Log In</button>
             <br />
             <br />
             <label>
