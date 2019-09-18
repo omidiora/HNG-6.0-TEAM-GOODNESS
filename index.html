@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SignUp Page</title>
+    <title>Login Page</title>
 
     <!--Bootsrap 4 CDN-->
     <link
@@ -29,7 +29,7 @@
     />
 
     <!--Custom styles-->
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -38,36 +38,21 @@
         <div class="d-flex justify-content-center h-100">
           <div class="card">
             <div class="card-header">
-              <h3>Sign Up</h3>
+              <h3>Sign In</h3>
             </div>
             <div class="card-body">
-              <form>
-                <div class="input-group form-group username">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"
-                      ><i class="fas fa-envelope"></i
-                    ></span>
-                  </div>
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div class="input-group form-group username">
+              <form method="" action="index.php" name="myform">
+                <p class="alert alert-danger" role="alert" style="display: none" id="invalidemail" >Invalid email! </p>
+                <div class="input-group form-group username" >
                   <div class="input-group-prepend">
                     <span class="input-group-text"
                       ><i class="fas fa-user"></i
                     ></span>
                   </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Username"
-                    required
-                  />
+                  <input  type="text"  class="form-control" placeholder="Email" name="username" />
                 </div>
+                
+                <p class="alert alert-danger" role="alert"  style="display: none" id="invalidpassword">Invalid password!  </p>
                 <div class="input-group form-group password">
                   <div class="input-group-prepend">
                     <span class="input-group-text"
@@ -77,39 +62,29 @@
                   <input
                     type="password"
                     class="form-control"
-                    placeholder="Password"
-                    required
+                    placeholder="password"
+                    name="password"
+                    
                   />
                 </div>
-                <div class="input-group form-group password">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"
-                      ><i class="fas fa-key"></i
-                    ></span>
-                  </div>
-                  <input
-                    type="password"
-                    class="form-control"
-                    placeholder="Retype Password"
-                    required
-                  />
+                <div class="row align-items-center remember">
+                  <input type="checkbox" />Remember Me
                 </div>
-
-                <span class="row align-items-center remember">
-                  <input type="checkbox" /><label>Remember Me</label>
-                </span>
-                <span class="form-group">
+                <div class="form-group">
                   <input
                     type="submit"
-                    value="Sign Up"
-                    class="btn float-right signup_btn"
-                  />
-                </span>
+                    value="Login"
+                    class="btn float-right login_btn"
+                    onclick="myfunction()"  />
+                </div>
               </form>
             </div>
-            <div class="card-footer">
+            <div class="card-footer " style="margin-top: 10px;">
               <div class="d-flex justify-content-center links">
-                Already have an account?<a href="index.html">Sign In</a>
+                Don't have an account?<a href="signup.html" style="color:red">Sign Up</a>
+              </div>
+              <div class="d-flex justify-content-center"  style="margin-bottom: 100px;">
+                <a href="#">Forgot your password?</a>
               </div>
             </div>
           </div>
