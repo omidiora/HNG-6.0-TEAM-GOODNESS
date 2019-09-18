@@ -14,5 +14,6 @@ function myfunction(){
         event.preventDefault();
         return false
     }
-     
+    location.href ="index.html";
+
 }

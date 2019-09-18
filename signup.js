@@ -40,7 +40,7 @@ if ( password1 !==password2 ){
     }
     
 
-
+    location.href ="index.html"
 
 
 
